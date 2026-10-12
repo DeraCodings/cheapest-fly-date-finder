@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+/* ── Design tokens — Orange Eggshell palette (pocket-timetable concept) ── */
+@theme {
+  --color-page: #f0ead6;           /* Eggshell — page background */
+  --color-surface: #f7f2e2;        /* search group / ledger row fill */
+  --color-surface-strong: #fdfbf4; /* inputs, cheapest row, quiet buttons */
+  --color-hairline: #dcd5bd;       /* rules and borders */
+  --color-ink: #1d3557;            /* Oxford Navy — text, icons, links */
+  --color-accent: #eaa221;         /* Golden Orange — fill only */
+  --color-decorative: #5b96c2;     /* Blue Bell — marks and focus */
+  --color-muted: #929ca0;          /* Cool Steel — secondary, dashed lines */
+  --color-alert: #bd4b26;          /* Alert Clay — errors */
+
+  --radius-row: 10px;
+  --radius-field: 6px;
+}
+
+@theme inline {
+  --font-ui: var(--font-titillium);
+  --font-num: var(--font-share-tech-mono);
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+  }
+
+  body {
+    @apply bg-page font-ui text-ink antialiased;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-decorative;
+  }
+}
