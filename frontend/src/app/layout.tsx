@@ -19,7 +19,7 @@ const shareTechMono = Share_Tech_Mono({
 export const metadata: Metadata = {
   title: "Cheapest-Day-to-Fly Finder",
   description:
-    "Find the lowest-fare departure dates for any flight route — prototype with sample fare data.",
+    "Find the lowest-fare departure dates for any flight route.",
 };
 
 export default function RootLayout({
